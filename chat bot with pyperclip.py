@@ -1,7 +1,7 @@
 import google.generativeai as genai
 import pyperclip
 
-genai.configure(api_key="")
+genai.configure(api_key="") #for gemini api key
 model = genai.GenerativeModel("gemini-pro-latest")
 
 print("Chatbot initiated. Type 'quit' or 'exit' to end the conversation.")
@@ -19,4 +19,5 @@ while True:
 
     pyperclip.copy(reply)
     print("---------------Copied to clipboard! You can paste it directly in Word.------------------")
+
 

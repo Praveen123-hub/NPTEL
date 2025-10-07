@@ -148,9 +148,9 @@ def main():
     pygame.init()
     win = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("MaZE Mania")
-    player_image = pygame.image.load(r"D:\MISSIONAP\Doraemon.png")  
+    player_image = pygame.image.load(r"")  #add any image path for interaction
     player_image = pygame.transform.scale(player_image, (GRID_SIZE, GRID_SIZE))
-    goal_image = pygame.image.load(r"D:\MISSIONAP\Nobita.jpg")  
+    goal_image = pygame.image.load(r"")   #add any image path for interaction
     goal_image = pygame.transform.scale(goal_image, (GRID_SIZE, GRID_SIZE)) 
 
     grid = [[Cell(row, col) for col in range(COLS)] for row in range(ROWS)]
@@ -201,3 +201,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+

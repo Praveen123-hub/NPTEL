@@ -1,6 +1,6 @@
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyBWC32zkElLFq-yz0uNOW53xgvwIZKbBo8")
+genai.configure(api_key="")
 
 model = genai.GenerativeModel("gemini-pro-latest")
 
@@ -13,8 +13,9 @@ while True:
         break
 
     response = model.generate_content(message)
-    reply = response
+    reply = response.text
     print("Bot :", reply)
+
 
 
 
